@@ -48,6 +48,10 @@
   margin-bottom: 40px;
 }
 
+.real-quiz {
+  opacity: 0;
+}
+
 .quiz__btn {
   border: none;
   color: #fff;
@@ -87,6 +91,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 30px;
   gap: 28px;
 }
 .controller__btn {
@@ -110,6 +115,16 @@
   border-color: #1f7a7b;
   background-color: #e6f8f9;
 }
+.btn-prev:disabled {
+  border: none;
+  color: #fff;
+  background-color: #C4C4C4;
+  cursor: pointer;
+  cursor: default;
+}
+.btn-prev:disabled:hover {
+  background-color: #ababab;
+}
 .btn-next {
   color: #fff;
   background-color: #44BABD;
@@ -118,8 +133,29 @@
 .btn-next:hover {
   background-color: #38a9ab;
 }
+.btn-next:disabled {
+  border: none;
+  color: #fff;
+  background-color: #C4C4C4;
+  cursor: pointer;
+  cursor: default;
+}
+.btn-next:disabled:hover {
+  background-color: #ababab;
+}
 
-
+.finish-btn {
+  color: #fff;
+  background-color: #44ca63;
+  padding: 14px 50px;
+  border-radius: 99px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.finish-btn:hover {
+  background-color: #317e15;
+}
 
 .text-center {
   text-align: center;
@@ -137,8 +173,23 @@
   display: none;
 }
 
+.real-quiz:last-child .hidden {
+  display: block;
+}
+
 
 /* animations */
+
+.fadeout {
+  animation-name: fadeout;
+  animation-duration: 0.4s;
+  animation-fill-mode: both;
+}
+.fadein {
+  animation-name: fadein;
+  animation-duration: 0.4s;
+  animation-fill-mode: both;
+}
 
 @keyframes fadeout {
   0% {
