@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz, lab 5</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <p class="preambula">
+          Нет никаких сомнений в том, что все без исключения дети — фантазеры.
+          Этот простой тест поможет вам определить степень и пределы (или
+          беспредельность) воображения вашего малыша. Итак, понаблюдайте за
+          вашим ребенком и дайте ответы всего на несколько вопросов.
+        </p>
+        <div class="quizbox">
+          <div class="quiz-start quiz">
+            <h2 class="quiz__title">Тест «Фантазер»</h2>
+            <div class="quiz__lenta lenta">
+              <p class="lenta__text">Тест содержит 11 вопросов</p>
+            </div>
+            <div class="text-center">
+              <button class="quiz__btn bg-green">
+                Начать прохождение теста
+              </button>
+            </div>
+          </div>
+
+          <div class="quiz-item quiz quiz-test hidden">
+            <h2 class="quiz__title">Тест «Фантазер»</h2>
+            <div class="quiz__lenta lenta">
+              <p class="lenta__text">Вопрос 1 из 13</p>
+            </div>
+            <div class="quiz__question question">
+              <p class="question__text">
+                Как часто ваш ребенок перевоплощается и играет разные роли?
+              </p>
+            </div>
+            <form class="quiz__form form" action="">
+              <div class="form__line">
+                <input required value="2" name="q1" id="a" type="radio" />
+                <label for="a">Да</label>
+              </div>
+              <div class="form__line">
+                <input required value="1" name="q1" id="b" type="radio" />
+                <label for="b">Нет</label>
+              </div>
+            </form>
+            <div class="text-center controller">
+              <button class="controller__btn btn-prev">Предыдущий вопрос</button>
+              <button class="controller__btn btn-next">Следующий вопрос</button>
+            </div>
+          </div>
+          
+          
+          
+          
+
+          
+          <!-- <div class="quiz-item quiz">
+            <h2 class="quiz__title">Тест «Фантазер»</h2>
+            <div class="quiz__lenta lenta">
+              <p class="lenta__text">Вопрос 1 из 13</p>
+            </div>
+            <div class="quiz__question question">
+              <p class="question__text">
+                Как часто ваш ребенок перевоплощается и играет разные роли?
+              </p>
+            </div>
+            <form class="quiz__form form" action="">
+              <div class="form__line">
+                <input name="q1" id="a1" type="radio" />
+                <label for="a1">Очень часто</label>
+              </div>
+              <div class="form__line">
+                <input name="q1" id="a2" type="radio" />
+                <label for="a2">Иногда</label>
+              </div>
+              <div class="form__line">
+                <input name="q1" id="a3" type="radio" />
+                <label for="a3">Практически никогда</label>
+              </div>
+            </form>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

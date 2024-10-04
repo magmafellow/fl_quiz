@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  font-family: Helvetica, sans-serif;
+}
+
+.quiz {
+  padding: 36px 0;
+  width: 770px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px #0000001b;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+
+.preambula {
+  width: 770px;
+  margin: 0 auto;
+  margin-bottom: 36px;
+}
+
+.quiz__title {
+  font-size: 22px;
+  color: #737373;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.quiz__lenta {
+  background-color: #44BABD;
+  padding: 22px 0;
+}
+.lenta {
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+}
+
+.quiz-start .quiz__lenta {
+  margin-bottom: 60px;
+}
+
+.quiz-item .quiz__lenta {
+  margin-bottom: 40px;
+}
+
+.quiz__btn {
+  border: none;
+  color: #fff;
+  padding: 12px 30px;
+  font-size: 14px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.quiz__question {
+  margin-bottom: 30px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.question__text {
+  color: #737373;
+}
+
+.quiz__form {
+  padding: 0 100px;
+  margin-bottom: 34px;
+}
+
+.form__line {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  color: #737373;
+}
+.form__line input[type="radio"] {
+  width: 26px;
+  height: 26px;
+  margin-right: 19px;
+}
+
+.controller {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+}
+.controller__btn {
+  color: #fff;
+  padding: 14px 50px;
+  border-radius: 99px;
+  border: none;
+  transition: 0.3s;
+}
+.controller__btn:disabled {
+  background-color: #C4C4C4;
+}
+.btn-prev {
+  border: 1px solid #44BABD;
+  color: #44BABD;
+  background-color: #fff;
+  cursor: pointer;
+}
+.btn-prev:hover {
+  color: #1f7a7b;
+  border-color: #1f7a7b;
+  background-color: #e6f8f9;
+}
+.btn-next {
+  color: #fff;
+  background-color: #44BABD;
+  cursor: pointer;
+}
+.btn-next:hover {
+  background-color: #38a9ab;
+}
+
+
+
+.text-center {
+  text-align: center;
+}
+
+.bg-green {
+  background-color: #44BABD;
+  transition: 0.23s;
+}
+.bg-green:hover {
+  background-color: #38a1a3;
+}
+
+.hidden {
+  display: none;
+}
+
+
+/* animations */
+
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* end animations */
