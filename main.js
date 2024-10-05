@@ -108,7 +108,14 @@ const allQuizes = document.querySelectorAll('.real-quiz')
 const allNextBtns = document.querySelectorAll('.btn-next')
 const allPrevBtns = document.querySelectorAll('.btn-prev')
 const finishBtn = document.querySelectorAll('.finish-btn')[11]
-console.log(finishBtn)
+const message = document.querySelector('.message')
+let total = 0
+let totalStr = ''
+const resume = {
+  '1_5': 'Вы трезвомыслящий реалист, не привыкший «витать в облаках», не желающий «терять почву под ногами». Возможно, это и помогает вам в жизни. Однако чуточку воображения и фантазии не помешало бы иметь. И не говорят ли вам окружающие, что вы, простите, слишком уж скучный человек?',
+  '6_12': 'Вы обладаете средним воображением, которое неплохо было бы ещё немного развить (а это при желании вполне возможно). Ведь качество это помогает практически каждому человеку творчески относиться к любым делам.',
+  '13_20': 'У вас богатая фантазия. И если вы сумеете воспользоваться этим, то ваша жизнь станет интересней и сможет принести много радости окружающим вас людям.',
+}
 
 function onStartClickHandler() {
   c = c + 1
@@ -137,20 +144,28 @@ function onPrevClickHandler() {
 }
 
 function onFinishClickHandler() {
-  console.log('in finish')
-  const temp1 = document.querySelectorAll('input')
-  const allCheckedInputs = []
-  for (let i = 0; i < temp1.length; i++) {
-    if(temp1[i].checked) {
-      allCheckedInputs.push(temp1[i])
-    }
-  }
+  // console.log('in finish')
+  // const temp1 = document.querySelectorAll('input')
+  // const allCheckedInputs = []
+  // for (let i = 0; i < temp1.length; i++) {
+  //   if(temp1[i].checked) {
+  //     allCheckedInputs.push(temp1[i])
+  //   }
+  // }
 
-  if (allCheckedInputs.length !== 11) {
-    window.alert('Вы не ответили на все вопросы.')
-  } else if (allCheckedInputs.length === 11) {
-    window.alert('Success!')
-  }
+  // if (allCheckedInputs.length !== 11) {
+  //   window.alert('Вы не ответили на все вопросы.')
+  // } else if (allCheckedInputs.length === 11) {
+  //   window.alert('Success!')
+  //   console.log(allCheckedInputs)
+  //   allCheckedInputs.forEach((item) => total+=Number(item.value))
+  //   allCheckedInputs.forEach((item) => totalStr+=item.value)
+  //   window.alert(`Total - ${total}`)
+  //   window.alert(`TotalStr - ${totalStr}`)
+  // }
+
+  allQuizes[10].classList.add('hidden')
+  message.classList.remove('hidden')
 }
 
 allNextBtns.forEach((item) => {
