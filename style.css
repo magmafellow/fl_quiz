@@ -106,10 +106,36 @@
   margin-bottom: 20px;
   color: #737373;
 }
+
+/* hide default appearance */
+input[type="radio"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+}
 .form__line input[type="radio"] {
   width: 26px;
   height: 26px;
+  border-radius: 50%;
   margin-right: 19px;
+  border: 1px solid #44BABD;
+  color: #44babd;
+  position: relative;
+}
+.form__line input[type="radio"]::before {
+  content: '';
+  display: none;
+  width: 13px;
+  height: 10px;
+  background-image: url('./img/mark.svg');
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+.form__line input[type="radio"]:checked::before {
+  display: block;
 }
 
 .controller {
